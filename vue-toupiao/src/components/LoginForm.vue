@@ -1,7 +1,13 @@
 <template>
   <div class='login-form'>
-    你是
-    <input v-model="text" placeholder="你的名字" class="newinput"/>
+    <div v-if="!isAuthenticated">
+      你是
+      <input v-model="text" placeholder="你的名字" class="newinput"/>
+      <button @click="login">保存</button>
+    </div>
+    <div v-else>
+      我是 {{ currentUser }}
+    </div>
   </div>
 </template>
 
@@ -10,7 +16,23 @@
   name:'login-form',
   data:()=>({
     text:''
-  })
+  }),
+  computed:{
+    isAuthenticated:function(){
+      return this.$store.state.auth.isAuthenticated
+    },
+    currentUser:function(){
+      return this.$store.state.auth.currentUser
+    }
+  },
+  methods:{
+    login:function(){
+      if(this.text.trim() === ''){
+        return
+      }
+      this.$store.commit({type:'login',text:this.text})
+    }
+  }
 }
 
 </script>
