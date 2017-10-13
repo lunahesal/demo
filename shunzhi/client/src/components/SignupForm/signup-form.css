@@ -1,0 +1,29 @@
+.signup-form,.signup-content .ant-form{
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+}
+.signup-inputs {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+  justify-content: center;
+}
+.signup-inputs .ant-form-item{
+  margin: 0;
+}
+.signup-inputs .ant-input{
+  width: 100%;
+  line-height: 16px;
+  padding: 20px 8px;
+  font-size: 14px;
+  color:#878787;
+  text-indent: 20px;
+  outline:0;
+  border:0;
+  border-bottom: 1px solid #E3E9EC;
+  box-sizing: border-box;
+}
+.signup-inputs input::-webkit-input-placeholder {
+  color: #ccc;
+}

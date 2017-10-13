@@ -1,0 +1,143 @@
+.prefile-top{
+  padding: 20px;
+  display: flex;
+  box-sizing: border-box;
+}
+.login-img{
+  width: 80px;
+  height: 80px;
+  display: block;
+  border-radius: 50%;
+  background-size: 150px;
+  background-position: center center;
+}
+.pre-login{
+  width: 0;
+  height: 0;
+  outline: 0;
+}
+.prefile-user{
+  flex-grow: 1;
+  padding: 10px;
+  box-sizing: border-box;
+  position: relative;
+}
+.prefile-user span{
+  color:#fff;
+}
+.prefile-username{
+  display: block;
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+.prefile-userslog{
+  opacity: 0.8;
+  font-size: 15px;
+  display: block;
+}
+.disappear{
+  display: none;
+}
+
+.prefile-userslog-two{
+  opacity: 0.8;
+  position: absolute;
+  top:45px;
+  left:10px;
+  display: none;
+}
+.prefile-userslog-two input{
+  background-color: rgba(0,0,0,0);
+  outline: 0;
+  border:0;
+  border-bottom: 1px solid rgba(255,255,255,0.8);
+  color: #fff;
+  font-size: 15px;
+}
+.prefile-userslog-two input:focus{
+  border-bottom: 1px solid rgba(255,255,255,0.8);
+}
+.prefile-btn{
+  background-color: rgba(0,0,0,0);
+  border:0;
+  color: #fff;
+  outline: 0;
+}
+.show{
+  display: block;
+}
+
+
+.prefile-editor{
+  padding: 25px 10px;
+}
+.prefile-lists{
+  min-height: 424px;
+  background-color: #F9FAFB;
+}
+.user-list{
+  padding: 20px;
+  box-sizing: border-box;
+}
+.list-item{
+  list-style: none;
+  display: flex;
+  background-color: #fff;
+  padding: 15px;
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.1);
+  margin: 18px;
+}
+.list-item-avator{
+  width: 50px;
+  height: 50px;
+  display: block;
+  border-radius: 50%;
+  background-image: url(http://yummy.haoduoshipin.com/uploads/avatars/f4580743b0a71c010daede0a8cb671c0);
+  background-size: 90px;
+  background-position: center center;
+}
+.list-item-name{
+  color:#F77062;
+  line-height: 50px;
+  flex-grow: 1;
+  margin-left: 10px;
+}
+.list-item .react-toggle{
+  margin-top: 26px;
+  margin-right: 20px;
+}
+.react-toggle .react-toggle-track{
+  width: 40px;
+  height: 10px;
+  background-color: #D0D0D0;
+}
+.list-item .react-toggle--checked .react-toggle-track{
+  background-color: #FFD8E6;
+}
+.list-item .react-toggle:hover:not(.react-toggle--disabled) .react-toggle-track{
+  background-color: #D0D0D0;
+}
+.list-item .react-toggle--checked:hover:not(.react-toggle--disabled) .react-toggle-track{
+  background-color: #FFD8E6;
+}
+.react-toggle--checked .react-toggle-track-check,.react-toggle-track .react-toggle-track-x{
+  width: 0;
+  height: 0;
+}
+.react-toggle .react-toggle-thumb {
+  width: 16px;
+  height: 16px;
+  background-color: #878787;
+  border:0;
+  top:-3px;
+  left:0;
+}
+.react-toggle--checked .react-toggle-thumb{
+  background-color: #FE5196;
+}
+.list-item .react-toggle--focus .react-toggle-thumb{
+  box-shadow: none;
+}
+.list-item .react-toggle:active:not(.react-toggle--disabled) .react-toggle-thumb{
+  box-shadow: none;
+}

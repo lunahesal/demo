@@ -1,0 +1,27 @@
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+.list{
+  margin: 0 20px 10px;
+  display: flex;
+  border-radius: 6px;
+  align-items: center;
+  animation: fadeIn 1.5s;
+}
+.list span:nth-child(1){
+  line-height: 40px;
+  flex-basis: 120px;
+  text-align: center;
+  color:#fff;
+}
+.list span:nth-child(2){
+  line-height: 34px;
+  background-color: #fff;
+  flex-grow: 1;
+  margin-right: 3px;
+  padding-left: 20px;
+  text-align: left;
+  border-radius: 0px 4px 4px 0px;
+}

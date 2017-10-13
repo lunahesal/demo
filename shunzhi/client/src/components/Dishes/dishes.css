@@ -1,0 +1,102 @@
+.dishes{
+  display: flex;
+  flex-direction: column;
+}
+.dishes-main{
+  height: 100vh;
+  padding-bottom: 90px;
+  box-sizing: border-box;
+}
+
+.dishes-main .slick-slider{
+  background-color: #fff;
+  margin: 5px 35px 0;
+  box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+}
+.dish-card{
+  display: block;
+  min-height: 75vh;
+  width: 100%;
+
+  display: flex;
+  flex-direction: column;
+}
+.dishes-main .dish-card-wrap {
+  height: 100%;
+  padding: 5px 35px 0;
+}
+.slides-item .dish-card-poster{
+  width: 100%;
+  height: 210px;
+  background-repeat: no-repeat;
+  background-position: center center;
+  -webkit-background-size: contain;
+  background-size: contain;
+
+}
+.dish-card-detail{
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+}
+.dish-name{
+  text-align: center;
+  color:#F77062;
+  line-height: 32px;
+  font-size: 26px;
+  margin: 0;
+  margin-top: 45px;
+}
+.dish-price{
+  color:#878787;
+  text-align: center;
+  margin-top: 20px;
+}
+.dish-price span{
+  color:#F77062;
+}
+.dish-icon-wrap{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  flex-grow: 1;
+}
+.dish-icon-inner{
+  width: 44px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-around;
+}
+.dish-comment-no{
+  color:#D0D0D0;
+  line-height: 20px;
+}
+.dish-desc{
+  font-size: 14px;
+  color:#878787;
+  text-align: center;
+  line-height: 24px;
+  position: relative;
+}
+.dish-desc-mask{
+  position: absolute;
+  top:0;
+  left:0;
+  right:0;
+  bottom:0;
+  background-image: linear-gradient(-180deg,rgba(255,255,255,0) 0%,#fff 100%);
+}
+.slick-slider .slick-dots{
+  bottom:-40px;
+}
+.slick-slider .slick-dots li.slick-active button:before{
+  opacity: 0.9;
+  color:#fff;
+}
+.slick-slider .slick-dots li button:hover:before, .slick-slider .slick-dots li button:focus:before{
+  opacity: 1;
+}
+.slick-slider .slick-dots li button:before{
+  color:#fff;
+  opacity: 0.4;
+}

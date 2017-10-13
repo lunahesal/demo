@@ -1,0 +1,11 @@
+
+.profile{
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  overflow: auto;
+}
+
+.pro-main{
+  flex-grow: 1;
+}

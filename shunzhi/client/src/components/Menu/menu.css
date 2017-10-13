@@ -1,0 +1,12 @@
+.menu{
+  position: absolute;
+  top:36px;
+  left: 17px;
+}
+.menu svg{
+  width: 24px;
+  height: 24px;
+}
+.menu:hover svg{
+  opacity:0.6;
+}

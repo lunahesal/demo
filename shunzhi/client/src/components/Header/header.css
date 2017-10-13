@@ -1,0 +1,9 @@
+.header{
+  position: relative;
+}
+.header-title{
+  text-align: center;
+  color:#fff;
+  padding: 45px 0 20px;
+  line-height: 15px;
+}

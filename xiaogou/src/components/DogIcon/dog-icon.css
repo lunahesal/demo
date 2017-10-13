@@ -1,0 +1,14 @@
+.dog-icon{
+  position: relative;
+}
+.delete-icon{
+  display: none;
+  width: 15px;
+  position: absolute;
+  top:10px;
+  left:10px;
+  cursor: pointer;
+}
+.dog-icon:hover .delete-icon{
+  display: block;
+}

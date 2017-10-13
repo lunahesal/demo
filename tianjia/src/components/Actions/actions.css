@@ -1,0 +1,8 @@
+.actions img{
+  width: 30px;
+  height: 30px;
+}
+.actions{
+  display: flex;
+  justify-content: space-around;
+}

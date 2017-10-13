@@ -1,0 +1,23 @@
+body{
+  margin: 0;
+  background-color: #333;
+}
+.app{
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  padding: 50px;
+}
+.main{
+  width: 900px;
+}
+.goods{
+  display: flex;
+  justify-content: space-around;
+}
+
+.list-wrap{
+  width: 340px;
+  margin: 0 auto;
+  margin-top: 50px;
+}

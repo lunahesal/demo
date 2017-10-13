@@ -1,0 +1,25 @@
+.layout{
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+.header{
+  background-color: #00bcd4;
+  display: flex;
+  padding: 10px;
+}
+.header a{
+  color:#fff;
+  text-decoration: none;
+}
+.main-wrap{
+  padding: 10px;
+  flex-grow: 1;
+  overflow: auto;
+}
+.footer{
+  background-color: #212121;
+  color:#fff;
+  padding: 10px;
+  text-align: center;
+}

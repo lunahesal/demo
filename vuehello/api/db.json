@@ -1,0 +1,36 @@
+{
+  "posts": [
+    {
+      "id": 1,
+      "title": "Git 技巧",
+      "content": "Git 非常有用"
+    },
+    {
+      "id": 2,
+      "title": "React 技巧",
+      "content": "React 非常有用"
+    }
+  ],
+  "comments": [
+    {
+      "postId": 1,
+      "id": "1",
+      "text": "Foo"
+    },
+    {
+      "postId": 1,
+      "id": "2",
+      "text": "Bar"
+    },
+    {
+      "text": "vfd",
+      "postId": "2",
+      "id": "Hy7-HMpnZ"
+    },
+    {
+      "text": "cdsf",
+      "postId": "1",
+      "id": "H1CTBGTnW"
+    }
+  ]
+}

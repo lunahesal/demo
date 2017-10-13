@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <style>
+  body{
+    margin: 0;
+  }
+  .parent{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+  }
+  .header,.footer{
+    background-color: #212121;
+    color:#fff;
+    padding: 20px;
+  }
+  .main{
+    flex-grow: 1;
+    background-color: #ccc;
+    display: flex;
+  }
+  .clu-1{
+    background-color: pink;
+    flex-grow: 1;
+  }
+  .clu-2{
+    background-color: yellow;
+    order:-1;
+  }
+  .clu-3{
+    background-color: green;
+  }
+  @media (max-width:680px) {
+    .main{
+      flex-direction: column;
+    }
+  }
+
+  </style>
+</head>
+<body>
+  <div class="parent">
+    <div class="header">header</div>
+    <div class="main">
+      <div class="clu-1">主题内容
+      
+      </div>
+      <div class="clu-2">导航栏</div>
+      <div class="clu-3">侧边栏</div>
+    </div>
+    <div class="footer">footer</div>
+  </div>
+
+</body>
+</html>

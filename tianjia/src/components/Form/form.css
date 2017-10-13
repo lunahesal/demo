@@ -1,0 +1,25 @@
+.form{
+  width: 300px;
+  margin: 0 auto;
+  margin-top: 30px;
+  position: relative;
+}
+.form input{
+  display: block;
+  outline:0;
+  width: 260px;
+  line-height: 30px;
+}
+.form button{
+  width: 40px;
+  line-height: 40px;
+  border-radius: 50%;
+  border:0;
+  background-color: green;
+  color:#fff;
+  font-size: 40px;
+  box-shadow: 0 0px 2px 2px #ccc;
+  position: absolute;
+  top:-3px;
+  right:25px;
+}
