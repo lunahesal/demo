@@ -5,9 +5,7 @@ const activeuser = {}
 export default function activeuserReducer(state=activeuser,action){
   switch(action.type){
     case 'ACTIVEUSER':
-      const newState = action.user
-      console.log(newState);
-      return newState
+      return action.user
     case 'UP_DATE':
       const upState = {...state,slogn:action.slogn}
       console.log(upState);

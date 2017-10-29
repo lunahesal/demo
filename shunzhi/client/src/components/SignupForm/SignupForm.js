@@ -20,7 +20,8 @@ class SignupForm extends Component {
     if(unFilled.length === 0 ){
       const allData = { ...data,
         url:'http://media.haoduoshipin.com/yummy/default-avatar.png',
-        slogn:'还没填写个性签名'
+        slogn:'还没填写个性签名',
+        friends:[]
       }
       axios.post('http://localhost:3008/users', allData).then(res=>{
         console.log(res.data)

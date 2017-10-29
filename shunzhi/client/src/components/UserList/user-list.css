@@ -1,0 +1,65 @@
+.user-list{
+  padding: 20px;
+  box-sizing: border-box;
+}
+.list-item{
+  list-style: none;
+  display: flex;
+  background-color: #fff;
+  padding: 15px;
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.1);
+  margin: 18px;
+}
+.list-item-avator{
+  width: 50px;
+  height: 50px;
+  display: block;
+  border-radius: 50%;
+  background-size: 90px;
+  background-position: center center;
+}
+.list-item-name{
+  color:#F77062;
+  line-height: 50px;
+  flex-grow: 1;
+  margin-left: 10px;
+}
+.custom-classname.react-toggle{
+  margin-top: 26px;
+  margin-right: 20px;
+}
+.react-toggle .react-toggle-track{
+  width: 40px;
+  height: 10px;
+  background-color: #D0D0D0;
+}
+.custom-classname.react-toggle--checked .react-toggle-track {
+  background-color: #FFD8E6;
+}
+/*.list-item .react-toggle--checked .react-toggle-track{
+  background-color: #FFD8E6;
+}*/
+.custom-classname.react-toggle:hover:not(.react-toggle--disabled) .react-toggle-track{
+  background-color: #D0D0D0;
+}
+.custom-classname.react-toggle--checked:hover:not(.react-toggle--disabled) .react-toggle-track{
+  background-color: #FFD8E6;
+}
+
+.react-toggle .react-toggle-thumb {
+  width: 16px;
+  height: 16px;
+  background-color: #878787;
+  border:0;
+  top:-3px;
+  left:0;
+}
+.react-toggle--checked .react-toggle-thumb{
+  background-color: #FE5196;
+}
+.custom-classname.react-toggle--focus .react-toggle-thumb{
+  box-shadow: none;
+}
+.custom-classname.react-toggle:active:not(.react-toggle--disabled) .react-toggle-thumb{
+  box-shadow: none;
+}

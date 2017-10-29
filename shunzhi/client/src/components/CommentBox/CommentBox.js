@@ -1,11 +1,11 @@
 import React, { Component } from 'react'
 import './comment-box.css'
 import store from '../../redux/store'
+import axios from 'axios'
 
 class CommentBox extends Component {
   state = {
-    comment:'',
-    comments:[]
+    comment:''
   }
   handleClick = (e) => {
     this.setState({
@@ -13,17 +13,38 @@ class CommentBox extends Component {
     })
   }
   handleSubmit =() => {
-    const { comment } = this.state
+    const text = this.state.comment
+    const { goodsId } = this.props
+    const currentUser = store.getState().activeuser
+    if(!currentUser.userName) return
+    const { url, userName } = currentUser
+    axios.post('http://localhost:3008/comments',{ text,url,userName,goodsId }).then(res => {
+      const { text, url, userName, goodsId, id } = res.data
+      store.dispatch({ type:'ADD_COMMENT',
+        text:text,url:url,
+        userName:userName,
+        goodsId:goodsId,
+        id:id
+      })
+    })
     this.setState({
       comment:''
     })
-    store.dispatch({type:'ADD_COMMENT',text:comment})
   }
   render() {
-    const comments = store.getState().comments
+    const { comments } = this.props
     const commentList = comments.map(t => (
       <div className='comment-list-item' key={t.id}>
-        {t.text}
+        <div className='comment-avatar'
+          style={{backgroundImage:`url(${t.url})`}}>
+        </div>
+        <div className='comment-detail'>
+          <div className='username-time'>
+            <div className='comment-username'>{t.userName}</div>
+            <div className='comment-time'>1-10</div>
+          </div>
+          <div className='comment-content'>{t.text}</div>
+        </div>
       </div>
     ))
     return (

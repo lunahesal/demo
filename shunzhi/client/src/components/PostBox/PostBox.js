@@ -4,7 +4,7 @@ import store from '../../redux/store'
 
 class PostBox extends Component {
   render() {
-    const comments = store.getState()
+    const { comments } = this.props
     return (
       <div className='post-box'>
         <h1 className='dish-sub-title'>评论区</h1>

@@ -7,7 +7,7 @@ class News extends Component {
     return (
       <div className='news'>
         <Header>News</Header>
-        <div className='news-update-wrap'>
+        <div className='news-update-wrap' style={{ 'height': `${window.innerHeight -80}px` }}>
           <div className='news-no-update'>
             暂无好友更新，可以直接去
             <Link to='/dishes'> 购物区 </Link>

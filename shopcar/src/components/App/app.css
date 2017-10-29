@@ -9,11 +9,12 @@ body{
   padding: 50px;
 }
 .main{
-  width: 900px;
+  width: 1200px;
 }
 .goods{
   display: flex;
   justify-content: space-around;
+  flex-wrap: wrap;
 }
 
 .list-wrap{

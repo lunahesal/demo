@@ -1,0 +1,28 @@
+@keyframes dog {
+  from{transform: rotate(0deg);}
+  to{transform: rotate(360deg);}
+}
+.dog{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.dog>img{
+  width: 140px;
+  height: 140px;
+  border-radius: 50%;
+  display: block;
+  -webkit-animation: dog infinite 10s linear
+}
+.intrs{
+  width: 300px;
+  margin: 0 auto;
+  padding-top: 30px;
+  text-align: left;
+  position: relative;
+}
+.intrs>img{
+  position: absolute;
+  top:20px;
+  right:10px;
+}

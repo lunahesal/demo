@@ -1,13 +1,8 @@
-const goods = []
 
-
-
-export default function goodsReducer(state=goods,action){
+export default function goodsReducer(state=[],action){
   switch(action.type){
-
     case 'LOAD_GOODS':
-      const newState = action.goods
-      return newState
+      return action.goods
       default:
       return state
   }

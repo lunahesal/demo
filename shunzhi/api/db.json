@@ -1,7 +1,7 @@
 {
   "goods": [
     {
-      "id": 1,
+      "id": "1",
       "url": "https://ss0.bdstatic.com/70cFuHSh_Q1YnxGkpoWK1HF6hhy/it/u=952185356,2784269270&fm=27&gp=0.jpg",
       "price": 43,
       "name": "提拉米苏",
@@ -10,7 +10,7 @@
       "clicked": false
     },
     {
-      "id": 2,
+      "id": "2",
       "url": "https://ss0.bdstatic.com/70cFuHSh_Q1YnxGkpoWK1HF6hhy/it/u=952185356,2784269270&fm=27&gp=0.jpg",
       "price": 93,
       "name": "黑森林",
@@ -19,7 +19,7 @@
       "clicked": false
     },
     {
-      "id": 3,
+      "id": "3",
       "url": "http://f12.baidu.com/it/u=881166037,2952098823&fm=72",
       "price": 63,
       "name": "抹茶蛋糕",
@@ -46,15 +46,24 @@
       "clicked": false
     }
   ],
-  "list": [],
+  "dishes": [],
   "users": [
     {
       "userName": "cd",
       "userEmail": "1223",
       "password": "123",
-      "url": "http://media.haoduoshipin.com/yummy/default-avatar.png",
+      "url": "http://yummy.haoduoshipin.com/uploads/avatars/f4580743b0a71c010daede0a8cb671c0",
       "id": 1,
-      "slogn": "cndj"
+      "slogn": "cndj",
+      "friends": [
+        {
+          "friendId": 2
+        },
+        {
+          "friendId": 6
+        }
+      ],
+      "friendId": 6
     },
     {
       "userName": "dd",
@@ -62,7 +71,8 @@
       "password": "sd",
       "url": "http://media.haoduoshipin.com/yummy/default-avatar.png",
       "id": 2,
-      "slogn": "fffffffff"
+      "slogn": "fffffffff",
+      "friends": []
     },
     {
       "userName": "f",
@@ -70,7 +80,12 @@
       "password": "ty",
       "url": "http://media.haoduoshipin.com/yummy/default-avatar.png",
       "id": 3,
-      "slogn": "还没填写个性签名"
+      "slogn": "还没填写个性签名",
+      "friends": [
+        {
+          "friendId": 2
+        }
+      ]
     },
     {
       "userName": "aa",
@@ -79,7 +94,76 @@
       "passwordsed": "as",
       "url": "http://media.haoduoshipin.com/yummy/default-avatar.png",
       "slogn": "还没填写个性签名",
+      "id": 4,
+      "friends": []
+    },
+    {
+      "userName": "cdd",
+      "userEmail": "cd",
+      "password": "cd",
+      "passwordsed": "cd",
+      "url": "http://media.haoduoshipin.com/yummy/default-avatar.png",
+      "slogn": "还没填写个性签名",
+      "id": 5,
+      "friends": [
+        {
+          "friendId": 2
+        }
+      ]
+    },
+    {
+      "userName": "kk",
+      "userEmail": "kk",
+      "password": "kk",
+      "passwordsed": "kk",
+      "url": "http://media.haoduoshipin.com/yummy/default-avatar.png",
+      "slogn": "还没填写个性签名",
+      "friends": [],
+      "id": 6
+    }
+  ],
+  "comments": [
+    {
+      "text": "cdc",
+      "url": "http://media.haoduoshipin.com/yummy/default-avatar.png",
+      "userName": "dd",
+      "goodsId": "2",
+      "id": 1
+    },
+    {
+      "text": "dv",
+      "url": "http://media.haoduoshipin.com/yummy/default-avatar.png",
+      "userName": "dd",
+      "goodsId": "2",
+      "id": 2
+    },
+    {
+      "text": "cd",
+      "url": "http://media.haoduoshipin.com/yummy/default-avatar.png",
+      "userName": "dd",
+      "goodsId": "1",
+      "id": 3
+    },
+    {
+      "text": "rrrr",
+      "url": "http://media.haoduoshipin.com/yummy/default-avatar.png",
+      "userName": "dd",
+      "goodsId": "1",
       "id": 4
+    },
+    {
+      "text": "tttt",
+      "url": "http://media.haoduoshipin.com/yummy/default-avatar.png",
+      "userName": "dd",
+      "goodsId": "1",
+      "id": 5
+    },
+    {
+      "text": "ggg",
+      "url": "http://media.haoduoshipin.com/yummy/default-avatar.png",
+      "userName": "cdd",
+      "goodsId": "1",
+      "id": 6
     }
   ]
 }

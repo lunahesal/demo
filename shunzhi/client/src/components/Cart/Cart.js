@@ -1,23 +1,25 @@
 import React, { Component } from 'react'
 import './cart.css'
 import Header from '../Header/Header'
+import store from '../../redux/store'
+
 class Cart extends Component {
-  state = {
-    lists:[{
-      "id": 2,
-      "url": "https://ss0.bdstatic.com/70cFuHSh_Q1YnxGkpoWK1HF6hhy/it/u=952185356,2784269270&fm=27&gp=0.jpg",
-      "price": 93,
-      "name": "黑森林",
-      "count": 0,
-      "description": "好吃",
-      "clicked": false
-    }]
+  calTotal = (dishes) => {
+    const total = dishes.map(t => t.price*t.count ).reduce((sum,total)=>{
+      return sum + total
+    },0)
+    return total
   }
-
+  addCount = (id) => {
+    store.dispatch({type:'ADD_COUNT',id})
+  }
+  subCount = (id) => {
+    store.dispatch({type:'SUB_COUNT',id})
+  }
   render() {
-    const { lists }=this.state
-
-    const listEach = lists.map(t => (
+    const{ dishes } = this.props
+    const total = this.calTotal(dishes)
+    const listEach = dishes.map(t => (
       <div key={t.id} className='list-each'>
         <div className='list-each-info'>
           <div className='imgbox'>
@@ -29,24 +31,25 @@ class Cart extends Component {
           </div>
         </div>
         <div className='qty'>
-          <span  className='minus'>-</span>
+          <span  className='minus' onClick={()=>this.subCount(t.id)}>-</span>
           <span className='list-count'>{t.count}</span>
-          <span  className='add'>+</span>
+          <span  className='add' onClick={()=>this.addCount(t.id)}>+</span>
         </div>
       </div>
     ))
     return (
       <div className='cart'>
         <Header>购物车</Header>
-        <div className='cartin'>
+        <div className='cartin' style={{ 'height': `${window.innerHeight -80}px` }}>
           <div className='cart-hero'>
-            <h1 className='total-price'>100 元</h1>
+            <h1 className='total-price'>{total} 元</h1>
           </div>
           <div className='cart-list-wrap'>
             <div className='cart-list-item'>
               { listEach }
             </div>
-            <div className='cart-checkout-button'>结算</div>
+            <div className='cart-checkout-button'
+              onClick={this.props.onCheckout}>结算</div>
           </div>
         </div>
       </div>

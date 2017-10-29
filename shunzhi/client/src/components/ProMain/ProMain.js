@@ -1,14 +1,13 @@
 import React, { Component } from 'react'
 import './pro-main.css'
 import editor from './editor.svg'
-import Toggle from 'react-toggle'
 import store from '../../redux/store'
 import axios from 'axios'
-import "react-toggle/style.css"
+import UserList from '../UserList/UserList'
+
 
 class ProMain extends Component {
   state= {
-    baconIsReady: false,
     edited:false,
     slogn:'还没填写个性签名'
   }
@@ -65,17 +64,8 @@ class ProMain extends Component {
           </div>
         </div>
         <div className="prefile-lists">
-          <div className="user-list">
-            <li className='list-item'>
-              <div className='list-item-avator'></div>
-              <span className='list-item-name'>aaa</span>
-              <Toggle
-                defaultChecked={this.state.eggsAreReady}
-                onChange={this.handleEggsChange} />
-            </li>
-          </div>
+          <UserList />
         </div>
-
       </div>
     )
   }

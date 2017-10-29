@@ -6,6 +6,7 @@ class App extends Component {
   state = {
     lists:[]
   }
+
   addToList = (newLists) => {
     this.setState({
       lists:[ ...this.state.lists, { ...newLists, count:1 }]
@@ -46,6 +47,7 @@ class App extends Component {
             <List lists={this.state.lists}
               adddClick={this.adddClick}
               minusClick={this.minusClick}
+              addToWill={this.addToWill}
               />
           </div>
         </div>

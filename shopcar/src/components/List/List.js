@@ -1,13 +1,26 @@
 import React, { Component } from 'react'
 import './list.css'
-
+import axios from 'axios'
 class List extends Component {
+
+
 
   calTotal = (lists) => {
     const total = lists.map(t => t.price*t.count ).reduce((sum,total)=>{
       return sum + total
     },0)
     return total
+  }
+
+  handleSubmit = () => {
+    const { lists }=this.props
+    console.log(lists)
+    lists.map(t => (
+      axios.post('http://localhost:3008/willdos',t).then(res => {
+        console.log(res.data)
+      })
+
+    ))
   }
 
   render() {
@@ -37,7 +50,10 @@ class List extends Component {
         </div>
         <div className="lists">
           {listEach}
+          { total !== 0 && <button onClick={this.handleSubmit}>提交订单</button>}
+
         </div>
+
       </div>
     )
   }

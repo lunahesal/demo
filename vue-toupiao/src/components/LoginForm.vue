@@ -27,17 +27,18 @@
   },
   methods:{
     login:function(){
-      if(this.text.trim() === ''){
+      if(!this.text.trim()){
         return
       }
       this.$store.commit({type:'login',text:this.text})
+      this.text=''
     }
   }
 }
 
 </script>
 
-<style>
+<style scoped>
 .login-form {
    background-color: #fff;
    box-shadow: 0 2px 2px rgba(0, 0, 0, 0.8);

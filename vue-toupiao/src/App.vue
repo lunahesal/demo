@@ -8,7 +8,8 @@
 import Home from './components/Home'
  export default{
    name:'app',
-   components:{Home}
+   components:{Home},
+   
  }
 </script>
 
@@ -27,4 +28,5 @@ import Home from './components/Home'
   #app{
     min-height: 100vh;
   }
+
 </style>

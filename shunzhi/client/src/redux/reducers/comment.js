@@ -1,17 +1,24 @@
-const comments = [
-  {
-    id:1,
-    text:'hello'
-  },
-  {
-    id:2,
-    text:'hi'
-  }
-]
-export default function commentReducer(state=comments,action){
+export default function commentReducer(state=[],action){
   switch(action.type){
+    case 'LOAD_COMMENTS':
+      return action.comments
     case 'ADD_COMMENT':
-      return [...state,{text:action.text,post:action.postId}]
+    console.log([...state,
+      { text:action.text,
+        url:action.url,
+        userName:action.userName,
+        goodsId:action.goodsId
+       }
+    ]);
+      return [...state,
+        { text:action.text,
+          url:action.url,
+          userName:action.userName,
+          goodsId:action.goodsId,
+          id:action.id
+         }
+      ]
+
       default:
       return state
   }

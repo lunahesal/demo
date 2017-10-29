@@ -1,0 +1,15 @@
+body{
+  margin: 0;
+}
+.App{
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+.upper{
+  background-color: #00bcd4;
+}
+.lower{
+  background-color: #f0f0f0;
+  flex-grow: 1;
+}

@@ -63,3 +63,11 @@
   cursor: pointer;
   user-select:none;
 }
+.lists button{
+  display: block;
+  width: 100%;
+  line-height: 30px;
+  border:0;
+  background-color: blue;
+  color:#fff;
+}

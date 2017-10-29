@@ -5,7 +5,6 @@ import {AreaChart, Area, XAxis, YAxis, CartesianGrid, Tooltip} from 'recharts'
 class DataTwo extends Component {
   render() {
     let maxWidth=window.innerWidth - 40
-    console.log(window.innerwidth);
     const data = [
       {name: '3 月', amount: 70, pv: 2400, amt: 2400},
       {name: '4 月', amount: 100, pv: 1398, amt: 2210},
@@ -19,7 +18,6 @@ class DataTwo extends Component {
           margin={{top: 10, right: 10, left: 0, bottom: 0}}>
           <XAxis dataKey="name"/>
           <YAxis/>
-          <CartesianGrid strokeDasharray="3 3"/>
           <Tooltip/>
           <Area type='monotone'  dataKey='amount'
             stroke='none' fill='rgb(145, 225, 221)' fillOpacity='0.6'
